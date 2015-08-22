@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nfctagwriter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission 
+        android:name="android.permission.NFC" />
+    <uses-feature 
+        android:name="android.hardware.nfc" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.nfctagwriter.splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+        		<action android:name="android.nfc.action.TECH_DISCOVERED" />
+   			</intent-filter>
+ 
+    	<meta-data
+       		 android:name="android.nfc.action.TECH_DISCOVERED"
+       		 android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        
+        <activity
+            android:name="com.example.nfctagwriter.Menulist"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.nfctagwriter.MENULIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.nfctagwriter.Read"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.nfctagwriter.READ" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.nfctagwriter.Copy"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.nfctagwriter.COPY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.nfctagwriter.Write"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.nfctagwriter.WRITE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.nfctagwriter.Erase"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.nfctagwriter.ERASE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.nfctagwriter.Help"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.nfctagwriter.HELP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.nfctagwriter.About_Tag"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.nfctagwriter.ABOUT_TAG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

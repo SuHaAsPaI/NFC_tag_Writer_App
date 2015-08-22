@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFC Tag Writer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="about_app">About App</string>
+    <string name="tag_erase_successful">Tag Erase Successfully</string>
+    <string name="tap_the_tag">Tap the Tag</string>
+    <string name="tag_copied_success">Tag Copied Successfully</string>
+    <string name="tap_th_tag_to_write">Tap the Tag to Write</string>
+    <string name="write1">Write</string>
+    <string name="type_here">Type Here</string>
+    <string name="tag_written_sucess">Tag Written Successfully</string>
+    <string name="data">Data:</string>
+    <string name="tag_type">Tag Type:</string>
+    <string name="is_tag_writable">Is Tag Writable? :</string>
+    <string name="tag_size">Tag Size:</string>
+    <string name="data_size">Data Size:</string>
+    <string name="dev">By SP Developer</string>
+    <string name="bug">For any Bug report:</string>
+    <string name="email">spdeveloper28@gmail.com</string>
+    
+</resources>
